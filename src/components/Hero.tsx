@@ -1,14 +1,11 @@
-
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-
 const Hero = () => {
-  return (
-    <section className="pt-12 pb-16 px-4 min-h-screen flex items-center relative overflow-hidden">
+  return <section className="pt-12 pb-16 px-4 min-h-screen flex items-center relative overflow-hidden">
       <div className="container mx-auto max-w-5xl relative z-10">
         <div className="animate-fade-in">
           <div className="relative mb-12">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight">
+            <h1 className="md:text-6xl lg:text-7xl leading-tight text-4xl text-center font-extrabold">
               Transforme seu time no maior motor de 
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-landing-green via-emerald-400 to-emerald-300"> crescimento da sua empresa</span>
             </h1>
@@ -50,8 +47,6 @@ const Hero = () => {
       <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-landing-green/20 rounded-full blur-[100px] animate-pulse"></div>
       <div className="absolute bottom-1/4 left-1/4 w-[30rem] h-[30rem] bg-landing-green/10 rounded-full blur-[120px] animate-pulse delay-1000"></div>
       <div className="absolute top-1/3 left-1/2 w-72 h-72 bg-emerald-500/10 rounded-full blur-[80px] animate-pulse delay-500"></div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
