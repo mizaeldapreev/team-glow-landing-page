@@ -1,17 +1,18 @@
+
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Sparkles } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="pt-20 pb-16 px-4 min-h-screen flex items-center relative">
-      <div className="container mx-auto max-w-5xl">
+    <section className="bg-glow pt-20 pb-16 px-4 min-h-screen flex items-center relative">
+      <div className="container mx-auto max-w-5xl relative z-10">
         <div className="animate-fade-in space-y-12">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
             Transforme seu time no maior motor de 
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-landing-green to-emerald-500"> crescimento da sua empresa</span>
+            <span className="gradient-text text-glow"> crescimento da sua empresa</span>
           </h1>
           
-          <div className="space-y-8 text-lg md:text-xl text-white/90 max-w-4xl">
+          <div className="space-y-8 text-lg md:text-xl text-white/90 max-w-4xl backdrop-blur-sm">
             <p className="leading-relaxed">
               Pessoas são o principal pilar de todo negócio.<br />
               Todo empreendedor sabe disso — ou pelo menos sente isso na pele. Quando o time está alinhado com o propósito, motivado e estruturado numa cultura forte, o crescimento é inevitável.
@@ -19,9 +20,9 @@ const Hero = () => {
             <p>O problema? A realidade não é essa pra todo mundo.</p>
             
             <div className="py-6">
-              <a href="#ebook" className="cta-button inline-flex items-center gap-2">
+              <a href="#ebook" className="cta-button inline-flex items-center gap-2 group">
                 Quero transformar meu time
-                <ArrowRight size={18} />
+                <Sparkles className="group-hover:rotate-12 transition-transform" size={18} />
               </a>
             </div>
             
@@ -35,8 +36,9 @@ const Hero = () => {
       </div>
       
       <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-landing-black to-transparent"></div>
-      <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-landing-green/10 rounded-full blur-3xl animate-glow"></div>
-      <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-landing-green/5 rounded-full blur-3xl animate-glow"></div>
+      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-landing-green/10 rounded-full blur-[100px] animate-glow"></div>
+      <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-landing-green/5 rounded-full blur-[80px] animate-glow"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gradient-radial from-landing-green/5 to-transparent opacity-30"></div>
     </section>
   );
 };

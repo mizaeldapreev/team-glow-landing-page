@@ -1,10 +1,9 @@
-
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Sparkles } from 'lucide-react';
 
 const PainPoints = () => {
   return (
-    <section id="problema" className="py-20 px-4 relative">
+    <section id="problema" className="illuminated-section py-20 px-4 relative">
       <div className="container mx-auto max-w-5xl">
         <div className="mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -68,6 +67,8 @@ const PainPoints = () => {
       
       {/* Decorative elements */}
       <div className="section-divider max-w-4xl mx-auto"></div>
+      <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-landing-green/5 rounded-full blur-[120px] animate-glow"></div>
+      <div className="absolute bottom-1/4 left-1/3 w-80 h-80 bg-landing-green/10 rounded-full blur-[100px] animate-glow"></div>
     </section>
   );
 };
