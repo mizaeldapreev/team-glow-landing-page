@@ -1,8 +1,9 @@
+
 import React from 'react';
 
 const Solution = () => {
   return (
-    <section id="solucao" className="illuminated-section py-20 px-4 relative">
+    <section id="solucao" className="py-20 px-4 relative">
       <div className="container mx-auto max-w-5xl">
         <div className="mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -71,9 +72,7 @@ const Solution = () => {
       
       {/* Decorative elements */}
       <div className="section-divider max-w-4xl mx-auto"></div>
-      <div className="absolute top-1/3 right-1/5 w-96 h-96 bg-landing-green/5 rounded-full blur-[150px] animate-glow"></div>
-      <div className="absolute bottom-1/3 left-1/4 w-80 h-80 bg-landing-green/10 rounded-full blur-[120px] animate-glow"></div>
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gradient-radial from-landing-green/5 to-transparent opacity-20"></div>
+      <div className="absolute top-1/3 right-1/5 w-64 h-64 bg-landing-green/10 rounded-full blur-3xl animate-glow"></div>
     </section>
   );
 };

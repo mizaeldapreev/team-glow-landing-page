@@ -1,4 +1,6 @@
+
 import React, { useEffect } from 'react';
+import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import PainPoints from '../components/PainPoints';
 import Solution from '../components/Solution';
@@ -26,6 +28,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-landing-black text-white overflow-x-hidden">
+      <Navbar />
       <Hero />
       <PainPoints />
       <Solution />
